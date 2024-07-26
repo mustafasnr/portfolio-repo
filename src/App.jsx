@@ -1,36 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ProfilResmi from "./mycomponents/ProfilResmi";
 import Calismalar from "./mycomponents/CalismaAccordionItem";
 import { Separator } from "@/components/ui/separator";
 import { mainText } from "./assets/data";
+import MyLinks from "./mycomponents/MyLinks";
 
 function App() {
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsAnimating(true);
-      setTimeout(() => setIsAnimating(false), 500);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="w-full h-full flex flex-1 flex-col items-center gap-y-10 pt-20 overflow-x-hidden">
+    <div className="w-full h-full flex flex-1 flex-col items-center gap-y-10 pt-16 overflow-x-hidden">
       <ProfilResmi
         className={
-          `transition-transform duration-500 ${
-            isAnimating ? " scale-110 " : " scale-100 "
-          }` +
-          "w-32 h-32 rounded-xl hover:cursor-pointer shadow-2xl shadow-black/80"
+          "w-32 h-32 rounded-xl hover:cursor-pointer shadow-sm shadow-black/80"
         }
       />
+      <MyLinks />
       <Separator
         orientation="horizontal"
         className="bg-black w-[95%] h-[0.5px]"
       />
-      <div className="text-xl px-20 text-center text-black ">
+      <div className="text-xl px-20 my-5 text-center text-black ">
         <p>{mainText}</p>
       </div>
       <Separator
@@ -40,7 +28,7 @@ function App() {
       <p className="w-full px-20 text-center text-3xl text-black hover:underline">
         Yaptığım Çalışmalar
       </p>
-      <div className="w-full px-20 pb-20">
+      <div className="w-full px-20 pb-16">
         <Calismalar />
       </div>
     </div>
