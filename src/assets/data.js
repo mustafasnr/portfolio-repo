@@ -29,7 +29,7 @@ export const data = [
   },
   {
     title: "React Native + Redux + FS ile TODO Uygulaması 2",
-    href: "https://github.com/mustafasnr/React-Native-ToDo-App", //değişecek burası
+    href: "https://github.com/mustafasnr/React-Native-Tailwind-TODO-App",
     uri: "./todo2.jpeg",
     description:
       "Daha önce yapmış olduğu Todo uygulamasının bellekte oluşturulan kopya değerlerinin birden fazla sayfada ve component'te kullanılmasından dolayı kod karmaşıklığı artıyordu. Böylesi durumları daha rahat kontrol etmek için oluşturulan Redux kütüphanesini kullanarak verilerimi oluşturdum. Web üzerinden yaptığım isteklerin işlenmesi için createAsyncThunk fonksiyonlarını kullanarak önce veri tabanında daha sonrasında uygulama içinde değişimleri anlık olarak uyguladım.",
@@ -57,7 +57,7 @@ export const data = [
   },
   {
     title: "React Native ile SUBÜ Store Mobil Uygulaması ",
-    href: "https://github.com/mustafasnr/React-Native-Deep-Learning-App",
+    href: "https://github.com/mustafasnr/React-Native-SUBU-Store-App",
     uri: "./store.jpeg",
     description:
       "Okulumun Kendi ürünlerini sattığı web sitesini kendi perspektifimden React Native ile oluşturdum. Ürün inceleme, ana sayfa, kategori seçimi, kargo takip ekranı ve sepet ekranlarından oluşan uygulamada sepet değişkenini yine kod karmaşıklığını ve hataları azaltmak için Redux ile oluşturdum.",
